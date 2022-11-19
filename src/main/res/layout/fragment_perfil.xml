@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/miActionBar"
+    tools:context=".fragments.PerfilFragmentView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgFotoCircular"
+            android:src="@drawable/huella"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:civ_shadow_radius="5dp"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            app:civ_circle_color="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvNombreMascotaPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/nombre_mascota"
+            android:textSize="@dimen/nombre_mascota"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

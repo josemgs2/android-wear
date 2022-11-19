@@ -1,0 +1,41 @@
+SUBIR RAPIDO
+git add .
+git commit -m "conexión bd firebase7"
+git push heroku main
+heroku open
+
+
+Para crear el SHA1 y poder descargar el google-service.json
+keytool -J-Duser.language=en -exportcert -keystore C:\Users\Daniel\.Android\debug.keystore -list -v
+
+Ver el log heroku
+heroku logs --tail
+
+Descargar librerías
+npm install cool-ascii-faces
+
+Añadir ficheros
+git add .
+
+Crear un commit
+git commit -m "Add cool face API"
+
+Subirlo
+git push heroku main
+
+
+Abrir el navegador con el  endpoint cool
+heroku open cool
+
+Instalar el bodyparser para desde node.js leer el request
+npm install --save --save-exact body-parser
+
+Instalar firebase
+Segun curso: npm install --save --save-exact firebase
+Segun documentacion: npm install firebase-admin --save
+
+URL para añadir firebase al servidor heroku
+https://firebase.google.com/docs/admin/setup
+
+Instlar Firebase CLoud Messenger fcm-push para enviar notificaciones desde nodejs
+npm install fcm-push

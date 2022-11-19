@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary"
+    android:elevation="@dimen/elavation_actionbar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/ToolbarTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/logo"
+            android:padding="5dp"
+            android:src="@drawable/huella"
+            app:tint="@color/primary_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="@string/petagram"
+            android:textColor="@color/primary_light"
+            android:textSize="@dimen/title_size" />
+
+        <ImageView
+            android:id="@+id/imgFavoritos"
+            android:layout_width="@dimen/favoritos_width"
+            android:layout_height="@dimen/favoritos_height"
+            android:layout_weight="1"
+            android:contentDescription="@string/favoritos"
+            android:src="@drawable/star5"
+            app:tint="@color/primary_light" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

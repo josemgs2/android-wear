@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuCuenta"
+        android:title="@string/menu_cuenta"
+        android:orderInCategory="200"/>
+    <item
+        android:id="@+id/menuContacto"
+        android:title="@string/menu_contacto"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/menuRecibirNotificaciones"
+        android:title="@string/menu_recibir_notificaciones"
+        android:orderInCategory="200"/>
+    <item
+        android:id="@+id/menuAcercaDe"
+        android:title="@string/menu_acercade"
+        android:orderInCategory="200"/>
+</menu>

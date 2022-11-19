@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dossis.curso4semana4">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Curso4Semana4">
+        <activity android:name="com.dossis.curso4semana4.activitys.RecibirNotificacionesActivity"></activity>
+
+        <service
+            android:name="com.dossis.curso4semana4.services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.dossis.curso4semana4.activitys.LoginActivity">
+            <intent-filter android:scheme="http">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="/oauth2redirect"
+                    android:scheme="com.dossis.curso4semana4" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.dossis.curso4semana4"
+                    android:pathPrefix="/oauth2redirect"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!--
+<action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:host="curso4semana4" android:scheme="appSchema"/>
+        -->
+        <activity
+            android:name="com.dossis.curso4semana4.activitys.ContactoActivity"
+            android:label="@string/title_activity_contacto"
+            android:parentActivityName="com.dossis.curso4semana4.activitys.MainActivity"
+            android:theme="@style/Theme.Curso4Semana4.NoActionBar">
+
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dossis.curso4semana4.activitys.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dossis.curso4semana4.activitys.AcercaDeActivity"
+            android:parentActivityName="com.dossis.curso4semana4.activitys.MainActivity">
+
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dossis.curso4semana4.activitys.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dossis.curso4semana4.activitys.FavoritosActivityView"
+            android:parentActivityName="com.dossis.curso4semana4.activitys.MainActivity">
+
+            <!-- Soporte para versiones 4.0 o menores -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dossis.curso4semana4.activitys.MainActivity" />
+        </activity>
+        <activity android:name="com.dossis.curso4semana4.activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

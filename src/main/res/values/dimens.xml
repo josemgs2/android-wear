@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_corner_radius_cardview">4dp</dimen>
+    <dimen name="hueso_ancho">60dp</dimen>
+    <dimen name="hueso_alto">60dp</dimen>
+    <dimen name="elavation_actionbar">4dp</dimen>
+    <dimen name="dialogCornerRadius">4dp</dimen>
+    <dimen name="nombre_mascota">30sp</dimen>
+    <dimen name="title_size">28sp</dimen>
+    <dimen name="favoritos_width">48dp</dimen>
+    <dimen name="favoritos_height">48dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cabecera_text_size">16sp</dimen>
+    <dimen name="fuente_cabecera">22sp</dimen>
+</resources>

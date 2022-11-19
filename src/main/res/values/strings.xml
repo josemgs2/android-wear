@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">Curso4semana4</string>
+
+    <string name="facebook_app_id">1373075439730615</string>
+
+    <string name="imagen_de_la_mascota">Imagen de la mascota</string>
+    <string name="nombre_mascota">Nombre</string>
+    <string name="dummy_contador_likes">4</string>
+    <string name="marcar_like_a_esta_mascota">Marcar like a esta mascota</string>
+    <string name="n_mero_de_veces_que_fue_dado_like">Número de veces que fue dado like</string>
+    <string name="vote_por_su_perro_favorito">Vote por su perro favorito</string>
+    <string name="lista_de_favoritos">Lista de favoritos</string>
+    <string name="logo">Logo</string>
+    <string name="petagram">Petagram</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
+    <string name="title_activity_contacto">ContactoActivity</string>
+
+    <string name="mensaje_enviado">Se envió correctamente el email.</string>
+    <string name="mensaje_no_enviado">No se pudo envíar el mensaje.</string>
+    <string name="asunto_contacto">\"Contacto \"</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="acercade1">Soy Daniel. Programo, analizo, plancho, hago la cena.</string>
+    <string name="acercade2">Entre mis muchos proyectos, tengo 35 proyectos finalizados en todas las ramas, web, ASP.NET, c#, vb.net, c++, Uniface, Microstrategy,  Android, Java, css, js, videojuegos, bases de datos, business intelligent, macros office, flash, svgs, programación gráfica, QA, soporte, Python, IA, IOT, localización indoor, ticketing, etc.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_hint_nombre">Nombre</string>
+    <string name="email_hint_email">Email</string>
+    <string name="email_hint_mensaje">Mensaje</string>
+    <string name="mi_mascota">Mi mascota</string>
+    <string name="env_e_un_correo_al_contacto">Envíe un correo al contacto.</string>
+    <string name="menu_cuenta">Cuenta</string>
+    <string name="login">LOGIN</string>
+    <string name="usuario">Usuario</string>
+    <string name="menu_recibir_notificaciones">Recibir notificaciones</string>
+    <string name="recibir_notificaciones">RECIBIR NOTIFICACIONES</string>
+</resources>
